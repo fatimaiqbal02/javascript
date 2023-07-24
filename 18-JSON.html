@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Working with JSON</title>
+</head>
+<body>
+    <script>
+        let jsonObj = {
+            name: "Fatima",
+            age: 19,
+            city: "Lahore",
+            country: "Pakistan"
+        }
+        console.log(jsonObj);
+
+        let jsonStr = JSON.stringify(jsonObj);
+        console.log(jsonStr);
+        
+        jsonStr = jsonStr.replace("Lahore","Sahiwal");
+        console.log(jsonStr);
+
+        newJsonObj = JSON.parse(jsonStr);
+        console.log(newJsonObj);
+        
+    </script>
+</body>
+</html>

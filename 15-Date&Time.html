@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Date & Time In Js</title>
+    <style>
+        #TandD{
+            display: block;
+            border: 2px solid red;
+            background-color: blanchedalmond;
+            padding: 24px;
+            text-align: center;
+            font-size: 24px;
+        }
+    </style>
+</head>
+<body>
+        <span id="TandD"></span>
+    <script>
+/* --------------------------- First Way ------------------------------------------- */
+       let time = new Date();
+       console.log(time);
+
+/* -------------------------- Standard Time ---------------------------------------- */
+        let time1 = new Date(0);          /* 1000ms means after 1sec */
+        console.log(time1);
+
+/* ---------------------------- Another Way ----------------------------------------- */   
+        let time2 = new Date("2022-10-13");      /* year,month,date */
+        console.log(time2);
+
+/* ---------------------------- Another Way ----------------------------------------- */   
+        let time3 = new Date(2022,6,22,9,57,43);      /* year,month,date,hrs,min,sec,ms */
+        console.log(time3);
+       
+        let yr = time3.getFullYear();
+        console.log('the year is '+yr);
+
+        let month = time3.getMonth();
+        console.log('the month is '+month);
+
+        let date = time3.getDate();
+        console.log('the date is '+date);
+
+        let day = time3.getDay();
+        console.log('the day is '+day);
+
+        let hrs = time3.getHours();
+        console.log('the hour is '+hrs);
+
+        time3.setDate(15);
+        console.log(time3);
+
+        time3.setUTCDate(16);
+        console.log(time3);
+
+        console.log(Date.now());
+/* ------------------------------------------------------------------------------------ */
+        setInterval(displayTime, 1000);
+        function displayTime(){
+            document.getElementById('TandD').innerHTML = new Date();
+        }
+    </script>
+</body>
+</html>

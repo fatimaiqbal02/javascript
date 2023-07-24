@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Strings In Js</title>
+</head>
+<body>
+    <p>Strings In Js</p>
+    <div id="content"></div>
+    <script>
+        /* ------------------------- Strings Data Type----------------------------- */
+        var name = 'Fatima';
+        var uni = "comsat's";
+        console.log('My name is '+name +" and My uni is "+uni);
+
+        var temp = `${name} studies "SE" in ${uni}`;
+        console.log(temp);
+
+        var len = name.length;
+        console.log('The length of my name is '+len);
+        console.log(`The length of my name is ${len}`);
+
+        var myName = new String('Fatima');
+        console.log(myName);
+
+        document.getElementById('content').innerHTML = '<h3>This is a heading</h3>';
+
+    </script>
+</body>
+</html>

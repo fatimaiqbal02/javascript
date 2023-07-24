@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Manipulating the DOM</title>
+    <!-- DOM --- document object module  (everything written in  body of html) -->
+</head>
+<body>
+    <div id="main" class="container">
+        <ul id="nav">
+            <li>About</li>
+            <li>Home</li>
+            <li>Services</li>
+            <li>Contact Us</li>
+        </ul>
+    </div>
+    <div class="container">
+        this is another container
+    </div>
+    <script>
+        let main = document.getElementById('main');  /* returns element having id */
+        console.log(main);
+
+        let navBar = document.getElementById('nav');
+        console.log(navBar);
+
+        navBar.innerHTML = "<li>Home</li> <li>About Us</li> ";  /* changes whole nav */
+        console.log(navBar);
+
+        let containers = document.getElementsByClassName('container');
+        console.log(containers);    /* makes array of element with same class name */
+
+        containers[1].innerHTML = "<h1>Hello I am a heading</h1>"
+        console.log(containers[1]);
+
+       /*  containers[0].innerHTML = "<ul> <li>Home</li></ul>" */
+
+       let sel = document.querySelector('#nav>li');   
+       console.log(sel);                /* gives only first one */
+       sel.innerHTML = "<li>Email</li>";
+
+       let sel2 =document.querySelectorAll('#nav>li');
+       console.log(sel2);    /* makes array all elements in that id */
+
+    </script>
+</body>
+</html>

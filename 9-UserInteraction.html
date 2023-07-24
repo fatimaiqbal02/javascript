@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>User Interaction</title>
+</head>
+<body>
+    <script>
+        alert("This is a message");     /* argument: string , return value: undefined */
+
+        let name = prompt("what is your Name", "Guest");     /* default value is optional */
+        console.log(name);
+
+        let deletePost = confirm("Do you really want to delete this post?");
+        console.log(deletePost);    /* yes/no   -->  return true/false */
+
+        if(deletePost){
+            console.log("the post is deleted succesfully:");
+        }else{
+            console.log("the post is not deleted:");
+        }
+
+        let age = prompt("Enter your Age", "18");
+        if(age <= 18){
+            console.log("You are not allowed to enter in gym");
+        }else
+        console.log("You are allowed to enter in gym");
+    </script>
+</body>
+</html>

@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Strings Functions In Js</title>
+</head>
+<body>
+    <script>
+        var str = 'This is a string';
+        console.log(str);
+
+        console.log(str.indexOf('is'));
+        console.log(str.lastIndexOf('is'));
+        
+        console.log(str.slice(1,9));
+        console.log(str.substring(1,9));
+        console.log(str.substr(1,9));
+
+        var replace = str.replace('string','fatima');
+        console.log(str);
+        console.log(replace);
+
+        console.log(str.toLowerCase());
+        console.log(str.toUpperCase());
+
+        var num1 = 45;
+        var string = num1.toString();
+        console.log(string);
+
+        console.log(str.concat('str'));   /* + is recommended */
+
+        console.log(str.charAt(2));
+        console.log(str[2]);
+
+        console.log(str.charCodeAt(2));
+        
+        var str3 = '      hello    world      ';
+        console.log(str3 + 'o');
+        console.log(str3.trim() + 'o');
+
+    </script>
+</body>
+</html>

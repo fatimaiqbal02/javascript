@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Arrays & Objects</title>
+</head>
+<body>
+    <script>
+        /* ----------------------------- Objects -------------------------------------- */
+        let student = {
+            name: 'Fatima',
+            age: '19',
+            job: "Software Engineer",
+            city: 'lahore',
+            "city 2": "sahiwal"
+        };
+        console.log(student);
+
+        console.log(student.name);
+        console.log(student['job']);
+        console.log(student['city 2']);             
+       /*  console.log(student.city 2);          /* Error */
+
+        /* -------------------------Arrays as an Object ------------------------------ */
+        let names =[1, 2, 3.5, "Fatima", undefined, true];
+        console.log(names);
+        console.log(names[4]);
+
+        let myInfo = new Array(2,1,0,"Google",false);
+        console.log(myInfo);
+        console.log(myInfo.length);
+        console.log(myInfo.sort());
+
+        console.log(myInfo.push("hello"));
+        console.log(myInfo);
+
+        console.log(myInfo.push(true));
+        console.log(myInfo);
+
+        myInfo[3] = 'comsats'
+        console.log(myInfo);  
+
+        let arr = new Array(23);
+        console.log(arr);
+    </script>
+</body>
+</html>

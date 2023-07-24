@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Set Interval and Set Time Out</title>
+</head>
+<body>
+    <span id="time"></span>
+    <script>
+    /* setTimeOut ---> allows us to run function once after a given interval of time */
+    /* clearTimeOut ---> allows us to run function repeatedly after a given interval of time */
+
+/* ----------------------------- setTimeOut/clearTimeOut ---------------------------------*/
+    function greet(name, byetext){
+        console.log("Hello, Good Morning " + name + "! "+byetext);
+    }
+    timeOut = setTimeout(greet, 5000, "Fatima", "Take Care!"); 
+             /* run only once after 5000ms/5s */
+    console.log(timeOut);   /* timeOut = specific id */
+
+    clearTimeout(timeOut);   /* clear message */
+
+/* ---------------------------- SetInterval --------------------------------------------- */
+    intervalId = setInterval(greet, 5000, "Ayesha", "Have a nice Day!");  
+             /* run repeatedly after every 5000ms/5s */
+    clearInterval(intervalId);        
+    
+/* ------------------------- Display Time ---------------------------------------------- */
+    function displayTime(){
+        time = new Date();
+        console.log(time);
+        document.getElementById('time').innerHTML = time;
+    }
+    setInterval(displayTime , 1000);
+    </script>
+</body>
+</html>

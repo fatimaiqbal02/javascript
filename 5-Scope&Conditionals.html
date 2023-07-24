@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Scope and Conditionals</title>
+</head>
+<body>
+    <p>Scope and Conditionals in Js</p>
+    <script>
+        /* --------------------------- Scope ------------------------------------------*/
+        var str1 = "this is a string";
+        var str1 = 'this is a string';
+        console.log(str1);   /* shows no error for Redeclaration which could be difficult */
+
+        /* let----------------->scope = global,local,cannot redeclare(compile time error) */
+        let a = "my name is fatima";            /* global scope */
+        {
+            let a = "i study in comsats uni"   /* local scope */
+            console.log(a);
+        }
+        console.log(a);
+
+        const str = "this is a string 2";
+     /*    str = 'hello world';  */  /* run time error */
+        console.log(str);
+        
+
+        /* ---------------------- conditionals ------------------------------------ */
+        /* ------------------- 1) IF-ELSE IF-ELSE ------------------------------------- */
+        let age = 34;
+        if(age < 20){
+            console.log('I am an Teenager');
+        }else if(age >= 20 && age <= 50){
+            console.log('I am an Adult');
+        }else{
+            console.log('I am Old');
+        }
+        
+        /* ------------------------- 2) SWITCH-CASE ---------------------------------  */
+        const num1 = 2;
+        switch (num1) {
+            case 1:
+                console.log("The number is 1");
+                break;
+            case 2:
+                console.log('The number is 2');
+                break;
+            default:
+                console.log("The number is neither 1 nor 2");
+                break;
+        }
+    </script>
+</body>
+</html>

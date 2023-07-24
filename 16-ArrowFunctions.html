@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Arrow Functions In Js</title>
+</head>
+<body>
+    <script>
+    /*  function greet(){
+            console.log("Good Morning");
+        } */
+        
+        greet =() =>{
+            console.log("Good Morning");
+        }
+        greet();
+
+/* --------------------------------------------------------------------------------- */
+        sum = (a,b)=>{
+            return  a+b;
+        }
+
+        product = (a,b) => a*b;
+
+        half = a => a/2;
+
+        greet2 = () => console.log('have a nice day');
+        greet2();
+/* --------------------------------------------------------------------------------- */
+        setTimeout(() => {
+            time = new Date();
+            console.log(time);
+        },1000);
+/* --------------------------------------------------------------------------------- */
+/* Arrow function  --> this inside arrow refers to outside obj */
+        let obj1 = {
+            greetings: "Hyy",
+            names: ['fatima','ayesha','mariam','sundas'],
+            speak(){
+                obj1.names.forEach(element => {
+                    console.log(this.greetings + " Have a Nice Day!! "+element);     
+                });
+            }
+        };
+        obj1.speak();
+/* --------------------------------------------------------------------------------- */
+
+    </script>
+</body>
+</html>

@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Array of Objects In Js</title>
+</head>
+<body>
+    <script>
+    let books = [
+                { title: "C++", author: "Bjarne" },
+                { title: "Java", author: "James" },
+                { title: "Python", author: "Guido" },
+                { title: "Java", author: "James" },
+            ];
+    console.log(books);
+
+    let student1 = {name: "fatima" , age:19};
+    let student2 = {name: "aisha" , age:24};
+    let student3 = {name: "mariam" , age:25};
+
+    let students = [student1,student2,student3];
+    console.log(students);
+
+    students.forEach(function f(element){
+        console.log("The name is " +element.name +" and Age is "+element.age);
+    });
+    </script>
+</body>
+</html>
