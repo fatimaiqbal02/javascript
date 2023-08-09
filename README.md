@@ -2,12 +2,12 @@
 # Javascript
 Welcome to my Javascript repository!
  
- # <h3>Introduction</h3>
+ ## Introduction
 This GitHub repository contains my practice codes for the Js, I've created during my learning journey. This repository contains codes for various Js topics, 
 including covering different data types, arrays, functions, loops, DOM elements, working with Json, Math library etc and much more. 
 I have delved deep into these concepts to gain hands-on experience. All the codes neat and are written in well organized manner.
 
-# <h3>Features</h3>
+## Features
 The repository includes implementations for the following:
 
 - **Introduction to JavaScript:** Understanding the basics of JavaScript.
